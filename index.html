@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Vector-visualizer</title>
+    <style>
+      body { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+    <div class="side-bar">
+      <div class="drawing">
+        <h3>Drawing vectors</h3>
+        <form class="draw-form">
+        <input class="x-component" type="text" placeholder="Enter x-component">
+        <input class="y-component" type="text" placeholder="Enter y-component">
+        <input class="z-component" type="text" placeholder="Enter z-component">
+        </form>
+        <br>
+        <button type="button" class="draw">Draw</button>
+      </div>
+      <div class="operations">
+        <h3>Operations</h3>
+        <p>Please pick two vectors from visualizer, and then select an operation.</p>
+        <br>
+        <label for="operations">Choose an operation:</label>
+        <select name="operations" id="operations">
+          <option value="dist">Distance between</option>
+          <option value="addition">Addition</option>
+          <option value="subtraction">Subtraction</option>
+          <option value="dot">Dot product</option>
+          <option value="cross">Cross product</option>
+          
+        </select>
+        <h4>Selected vectors</h4>
+        <div id="selectedVectorsInfo">
+        <div id="vector1">Vector 1: ()</div>
+        <div id="vector2">Vector 2: ()</div>
+        </div>
+        <button type="button" class="calc">Calculate</button>
+      </div>
+    </div>
+    <div class="visualizer">
+    </div>
+    </div>
+  </body>
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/draw.js"></script>
+  <script type="module" src="/vectoroperations.js"></script>
+</html>
