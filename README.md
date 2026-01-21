@@ -11,4 +11,4 @@ Next you run:
 ```
 npx vite
 ```
-And open the the localhost in browser.
+And the localhost will open in browser.
